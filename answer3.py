@@ -94,10 +94,11 @@ def func4(ip,date_list,ping_list,m,t,ipf):
         time = 0
         j = i - m 
         length =  m + 1
-        time1 = pd.to_datetime(date_list[j],format='%Y%m%d%H%M%S')
-        time2 = pd.to_datetime(date_list[i],format='%Y%m%d%H%M%S')
         if j < 0:
             j = 0
+        time1 = pd.to_datetime(date_list[j],format='%Y%m%d%H%M%S')
+        time2 = pd.to_datetime(date_list[i],format='%Y%m%d%H%M%S')
+        
         for j in range(j,i + 1,1):
             #print(i)
             #print(ping_list[j])
